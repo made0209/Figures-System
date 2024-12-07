@@ -9,14 +9,18 @@ public class Line {
         this.length = length;
     }
 
+    //method that draws line
     public void drawLine() {
+        System.out.println("---------------------------");
         if (length <= 1) {
             System.out.println("Line length must be > 1");
         } else {
             System.out.println("Printing line with length: " + length + "[u]" + "\n");
-            for(int i = 0; i <= length; i++) {
+            for(int i = 0; i < length; i++) {
                 System.out.print(" * ");
             }
+            System.out.println("\n");
+            System.out.println("---------------------------");
         }
     }
 
